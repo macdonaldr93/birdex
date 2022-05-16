@@ -2,7 +2,7 @@ import React from 'react';
 import { Html, Head, Main, NextScript } from 'next/document';
 import { FacebookMeta, IconMeta, Preconnect, TwitterMeta } from '../components';
 
-const name = 'Birdle';
+const name = 'Birdex';
 const description =
   'Collect, catalog and learn about bird species through their calls and sounds.';
 

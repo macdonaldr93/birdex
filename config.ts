@@ -1,9 +1,9 @@
 export const firebaseConfig = {
-  apiKey: 'AIzaSyCDSotsD_rgjWLETiLL2Wx3waVlR1-79FA',
-  authDomain: 'birdle-production.firebaseapp.com',
-  projectId: 'birdle-production',
-  storageBucket: 'birdle-production.appspot.com',
-  messagingSenderId: '497775925148',
-  appId: '1:497775925148:web:f5bed8faa06e927b4bda59',
-  measurementId: 'G-J8JCJZ9SW6',
+  apiKey: 'AIzaSyDIIaD04PVwJlXEIIB3W4D36BxciNSsKr0',
+  authDomain: 'birdex-production.firebaseapp.com',
+  projectId: 'birdex-production',
+  storageBucket: 'birdex-production.appspot.com',
+  messagingSenderId: '1093099364052',
+  appId: '1:1093099364052:web:679f55440f276f21846541',
+  measurementId: 'G-Y4E62S8CVN',
 };

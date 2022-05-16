@@ -19,7 +19,7 @@ if (isSessionStorageSupported) {
   }
 }
 
-const tag = '[Birdle]';
+const tag = '[Birdex]';
 export let logLevel = param ? parseInt(param, 10) : LogLevel.Info;
 
 if (isSessionStorageSupported) {
