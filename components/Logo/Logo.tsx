@@ -7,13 +7,13 @@ export interface LogoProps {
   title?: string;
 }
 
-export default function Logo({ title = 'wordful' }: LogoProps) {
+export default function Logo({ title = 'Birdex' }: LogoProps) {
   return (
     <h1 className={styles.logo}>
       <Link href="/">
-        <a>
-          <div className="visually-hidden">{title}</div>
+        <a className={styles.content}>
           <LogoSvg />
+          <div>{title}</div>
         </a>
       </Link>
     </h1>

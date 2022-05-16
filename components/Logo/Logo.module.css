@@ -6,28 +6,13 @@
 
 .logo a {
   border: none;
+  display: flex;
+  align-items: center;
 }
 
 .logo svg {
-  fill: var(--c-text-highlight);
-  height: 30px;
-  width: 135px;
-}
-
-@media (max-width: 768px) {
-  .logo {
-    text-align: center;
-  }
-
-  .logo svg {
-    height: 25px;
-    width: 112px;
-  }
-}
-
-@media (max-width: 340px) {
-  .logo svg {
-    height: 25px;
-    width: 90px;
-  }
+  fill: var(--c-text);
+  height: 48px;
+  width: 48px;
+  padding-right: var(--s-m);
 }

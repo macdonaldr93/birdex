@@ -1,6 +1,8 @@
 export { default as Button } from './Button';
+export { default as Card } from './Card';
 export { default as Definition } from './Definition';
 export { default as Emoji } from './Emoji';
+export { default as Gallery } from './Gallery';
 export { default as Logo } from './Logo';
 export { default as Nav } from './Nav';
 export { default as Page } from './Page';

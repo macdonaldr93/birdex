@@ -6,28 +6,31 @@ import { useScrollToHash, useTrackStreak } from '../hooks';
 import { Page, SourceText } from '../components';
 import { useDailyWord } from '../data';
 import { CreatorsView, DailyWordView } from '../views';
+import BirdListView from '../views/BirdListView';
 
 const oneHourInMs = 3600000;
 
 export default function Home() {
-  const [title, setTitle] = useState<string>();
-  const [now, setNow] = useState(() => format(new Date(), 'yyyy-MM-dd'));
-  const { snap, loading, error } = useDailyWord(now);
-  const snapData = snap?.data();
-
-  useScrollToHash({ loading });
-  useTrackStreak({ id: snap?.id });
-
-  useEffect(() => {
-    const interval = setInterval(
-      () => setNow(format(new Date(), 'yyyy-MM-dd')),
-      oneHourInMs,
-    );
-
-    return () => {
-      clearInterval(interval);
-    };
-  });
+  // const { snap, loading, error } = useDailyWord(now);
+  // const snapData = snap?.data();
+  const loading = false;
+  const error = undefined;
+  const snapData = [
+    {
+      id: '4',
+      discoveryNumber: 1,
+      name: 'White-Throated Sparrow',
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Zonotrichia_albicollis_CT1.jpg/1200px-Zonotrichia_albicollis_CT1.jpg',
+    },
+    {
+      id: '8',
+      discoveryNumber: 2,
+      name: 'Swamp Sparrow',
+      image:
+        'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Melospiza_georgiana_MN1.jpg/1200px-Melospiza_georgiana_MN1.jpg',
+    },
+  ];
 
   if (loading) {
     return <Page />;
@@ -54,42 +57,9 @@ export default function Home() {
     );
   }
 
-  if (!snapData || !snap) {
-    return (
-      <Page>
-        <Page.Content>
-          <Fade delay={300} duration={2300}>
-            <div>
-              <h2 className="heading mb-l">
-                There isn&apos;t a word today.
-                <br />
-                See you tomorrow.
-              </h2>
-              <Fade bottom delay={600}>
-                <SourceText authors={['Wordful team']} />
-              </Fade>
-            </div>
-          </Fade>
-        </Page.Content>
-      </Page>
-    );
-  }
-
   return (
-    <Page title={title} wordId={snap.id}>
-      <>
-        <DailyWordView
-          id={snap.id}
-          setTitle={setTitle}
-          book={snapData.book}
-          quote={snapData.quote}
-          word={snapData.word}
-          root={snapData.root}
-          definitions={snapData.definitions}
-          phonetic={snapData.phonetic}
-        />
-        <CreatorsView />
-      </>
+    <Page>
+      <BirdListView items={snapData} />
     </Page>
   );
 }

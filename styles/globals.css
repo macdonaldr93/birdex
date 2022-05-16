@@ -15,9 +15,9 @@
   --f-caption: normal 300 calc(1rem + 0.6vw) var(--f-family-serif);
   --f-small: normal 300 calc(0.7rem + 0.6vw) var(--f-family-sans-serif);
 
-  --c-background-main: #ffffff;
+  --c-background-main: #f7f7f7;
   --c-background-invert-main: #000000;
-  --c-text: #414141;
+  --c-text: #212121;
   --c-text-invert: #ffffff;
   --c-text-highlight: #231f20;
   --c-button-text: #231f20;
@@ -26,17 +26,17 @@
   --c-button-border: #cccccc;
   --c-button-border-hover: #bbbbbb;
 
-  --s-xs: 0.5rem;
-  --s-s: 1rem;
-  --s-m: 2rem;
-  --s-l: 3rem;
-  --s-xl: 4rem;
-  --s-xxl: 6rem;
+  --s-xs: 0.3rem;
+  --s-s: 0.5rem;
+  --s-m: 1rem;
+  --s-l: 2rem;
+  --s-xl: 3rem;
+  --s-xxl: 3rem;
 }
 
 html {
   color: var(--c-text);
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.4;
   scroll-behavior: smooth;
 }
@@ -112,30 +112,4 @@ h3,
   position: absolute;
   width: 1px;
   white-space: nowrap;
-}
-
-html.dark {
-  --c-background-invert-main: #e8e8e8;
-  --c-background-main: #000000;
-  --c-text-invert: #414141;
-  --c-text: #e8e8e8;
-  --c-text-highlight: #ffffff;
-  --c-button-text: #ffffff;
-  --c-button-background: #999999;
-  --c-button-background-hover: #777777;
-  --c-button-border: #999999;
-  --c-button-border-hover: #777777;
-}
-
-@media (max-width: 768px) {
-  :root {
-    --nav-height: 48px;
-
-    --s-xs: 0.3rem;
-    --s-s: 0.5rem;
-    --s-m: 1rem;
-    --s-l: 2rem;
-    --s-xl: 3rem;
-    --s-xxl: 3rem;
-  }
 }

@@ -10,6 +10,9 @@
   padding-right: var(--s-m);
   padding-top: var(--s-s);
   font: var(--f-logo);
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .list {

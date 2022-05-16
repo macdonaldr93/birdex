@@ -14,10 +14,12 @@ function Page({ children, title, wordId }: PageProps) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Wordful - Build your vocabulary</title>
+        <title>
+          Birdex - Collect them all
+        </title>
         <meta
           name="description"
-          content="Build your vocabulary with a new word and creative writing challenges every day."
+          content="Collect, catalog and learn about bird species through their calls and sounds."
         />
       </Head>
 
