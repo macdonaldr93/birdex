@@ -1,0 +1,12 @@
+.quote {
+  font: var(--f-heading);
+  text-align: center;
+  margin: 0;
+  word-wrap: break-word;
+  margin-bottom: var(--s-l);
+  font-weight: 300;
+}
+
+.quote a {
+  border-width: 3px;
+}

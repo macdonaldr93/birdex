@@ -1,0 +1,20 @@
+.source {
+  font: var(--f-subheading);
+  font-style: italic;
+  text-align: right;
+  margin-bottom: 0;
+}
+
+.authors {
+  margin: 0;
+}
+
+.book {
+  margin: 0;
+  font: var(--f-caption);
+  font-style: italic;
+}
+
+.book a {
+  color: inherit;
+}

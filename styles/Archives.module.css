@@ -1,0 +1,23 @@
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font: var(--f-heading);
+  padding-bottom: 2px;
+}
+
+.list li + li {
+  margin-top: var(--s-s);
+}
+
+.list a {
+  color: var(--c-text-highlight);
+  text-decoration: none;
+  border-bottom: 2px solid var(--c-text);
+  border-bottom-color: var(--c-text);
+  transition: border-bottom-color 0.15s ease-in-out;
+}
+
+.list a:hover {
+  border-bottom-color: transparent;
+}

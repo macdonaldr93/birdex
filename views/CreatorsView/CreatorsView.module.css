@@ -1,0 +1,30 @@
+.footer {
+  position: relative;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1 1;
+  overflow: hidden;
+  min-height: calc(100vh - var(--nav-height));
+  text-align: center;
+}
+
+.links {
+  position: absolute;
+  bottom: 15px;
+}
+
+.links ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  margin-top: var(--s-m);
+  font: var(--f-small);
+}
+
+.links ul li + li {
+  margin-left: var(--s-m);
+}

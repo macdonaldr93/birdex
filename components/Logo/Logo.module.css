@@ -1,0 +1,33 @@
+.logo {
+  font: var(--f-logo);
+  color: var(--c-text-highlight);
+  margin: 0;
+}
+
+.logo a {
+  border: none;
+}
+
+.logo svg {
+  fill: var(--c-text-highlight);
+  height: 30px;
+  width: 135px;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    text-align: center;
+  }
+
+  .logo svg {
+    height: 25px;
+    width: 112px;
+  }
+}
+
+@media (max-width: 340px) {
+  .logo svg {
+    height: 25px;
+    width: 90px;
+  }
+}

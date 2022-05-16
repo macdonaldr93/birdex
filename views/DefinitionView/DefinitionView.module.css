@@ -1,0 +1,23 @@
+.container {
+  align-items: center;
+}
+
+.root {
+  font: var(--f-heading);
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.phonetic {
+  font: var(--f-subheading);
+  font-style: italic;
+}
+
+.type {
+  font: var(--f-subheading);
+  font-style: italic;
+}
+
+.definitions {
+  margin-top: var(--s-m);
+}

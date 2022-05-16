@@ -1,0 +1,39 @@
+.container {
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.editor {
+  background-color: var(--c-background-main);
+  color: var(--c-text-highlight);
+  font: var(--f-subheading);
+  border: none;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  resize: none;
+  width: calc(100vw - var(--s-m) - var(--s-m));
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.editor::placeholder {
+  color: var(--c-text);
+}
+
+.submit {
+  margin-top: var(--s-xl);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.status {
+  font: var(--f-caption);
+  margin-right: var(--s-s);
+}

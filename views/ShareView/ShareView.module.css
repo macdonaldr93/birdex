@@ -1,0 +1,60 @@
+.list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: var(--s-m);
+}
+
+.list li + li {
+  margin-left: var(--s-s);
+}
+
+.word {
+  font: var(--f-heading);
+  font-weight: 500;
+}
+
+.phonetic {
+  font: var(--f-caption);
+  font-style: italic;
+}
+
+.quote {
+  margin-bottom: var(--s-m);
+  font: var(--f-subheading);
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.definitions {
+  text-align: left;
+}
+
+.type {
+  font-style: italic;
+}
+
+.meaning {
+  font: var(--f-caption);
+}
+
+.action {
+  background: none;
+  border: 1px solid transparent;
+  box-shadow: none;
+  font: var(--f-subheading);
+}
+
+.action:hover {
+  background: none;
+}
+
+.authors {
+  font: var(--f-caption);
+}
+
+.book {
+  font: var(--f-small);
+  font-style: italic;
+}

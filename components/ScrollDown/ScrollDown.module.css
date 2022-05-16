@@ -1,0 +1,43 @@
+.container {
+  background-color: var(--c-background-main);
+  padding: var(--s-s);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.9;
+}
+
+.arrows {
+  width: calc(30px + 1.5vw);
+  height: calc(16px + 1.5vw);
+}
+
+.arrows path {
+  stroke: var(--c-text-highlight);
+  fill: transparent;
+  stroke-width: 2px;
+  animation: arrow 3s infinite;
+  opacity: 0;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+
+  60% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

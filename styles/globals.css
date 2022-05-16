@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --nav-height: 70px;
+
+  --f-family-serif: 'Noto Serif Display', Garamond, Times, serif;
+  --f-family-sans-serif: Rasa, -apple-system, BlinkMacSystemFont, Helvetica Neue,
+    sans-serif;
+  --f-logo: normal 400 calc(1.3rem + 0.6vw) var(--f-family-serif);
+  --f-heading: normal 500 calc(1.6rem + 1.5vw) var(--f-family-serif);
+  --f-subheading: normal 300 calc(1.3rem + 0.9vw) var(--f-family-serif);
+  --f-body: normal 300 calc(1rem + 0.6vw) var(--f-family-sans-serif);
+  --f-caption: normal 300 calc(1rem + 0.6vw) var(--f-family-serif);
+  --f-small: normal 300 calc(0.7rem + 0.6vw) var(--f-family-sans-serif);
+
+  --c-background-main: #ffffff;
+  --c-background-invert-main: #000000;
+  --c-text: #414141;
+  --c-text-invert: #ffffff;
+  --c-text-highlight: #231f20;
+  --c-button-text: #231f20;
+  --c-button-background: #cccccc;
+  --c-button-background-hover: #bbbbbb;
+  --c-button-border: #cccccc;
+  --c-button-border-hover: #bbbbbb;
+
+  --s-xs: 0.5rem;
+  --s-s: 1rem;
+  --s-m: 2rem;
+  --s-l: 3rem;
+  --s-xl: 4rem;
+  --s-xxl: 6rem;
+}
+
+html {
+  color: var(--c-text);
+  font-size: 16px;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--c-background-main);
+  font: var(--f-body);
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+abbr,
+abbr[title] {
+  text-decoration: none;
+}
+
+a {
+  color: var(--c-text);
+  text-decoration: none;
+  border-bottom: 1px solid var(--c-text);
+  transition: border-color 0.15s ease-in-out;
+}
+
+a:active,
+a:hover {
+  border-color: transparent;
+}
+
+h1,
+.heading {
+  font: var(--f-heading);
+  margin: 0;
+}
+
+h1,
+h2 a {
+  border-width: 3px;
+}
+
+h2,
+h3,
+.subheading {
+  font: var(--f-subheading);
+  margin: 0;
+  margin-top: 1rem;
+}
+
+.mb-l {
+  margin-bottom: var(--s-l);
+}
+
+.t-c {
+  text-align: center;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}
+
+html.dark {
+  --c-background-invert-main: #e8e8e8;
+  --c-background-main: #000000;
+  --c-text-invert: #414141;
+  --c-text: #e8e8e8;
+  --c-text-highlight: #ffffff;
+  --c-button-text: #ffffff;
+  --c-button-background: #999999;
+  --c-button-background-hover: #777777;
+  --c-button-border: #999999;
+  --c-button-border-hover: #777777;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --nav-height: 48px;
+
+    --s-xs: 0.3rem;
+    --s-s: 0.5rem;
+    --s-m: 1rem;
+    --s-l: 2rem;
+    --s-xl: 3rem;
+    --s-xxl: 3rem;
+  }
+}
